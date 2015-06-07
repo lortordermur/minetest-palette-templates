@@ -1,0 +1,55 @@
+*** 16x16 palette editing templates for Minetest ***
+
+These templates are meant to ease the process of creating 16x16 textures by providing a color palette directly on the image canvas. This way basic colors can be selected using the color picker tool in GIMP or other image editors.
+
+Palette editing templates are 34x16 pixels. On the left hand is a 16x16 space containing a color palette composed of up to 256 colors, next to that a 2 pixel wide high-contrast but unintrusive separator, and on the right side the actual 16x16 workspace.
+
+Palette and workspace are separate layers to guard against accidental color picking or painting on the palette.
+
+Palette templates contained in the archive are:
+
+--- 6-8-5-fl-gr ---
+
+Based on a regular 6-8-5 RGB palette (the numbers designating the number of levels for each R/G/B primary)[1]. Thus, the palette contains 240 (6x8x5) colors, which leaves just enough remaining space for 8 shades of flesh and 8 shades of gray (as the base palette does not contain pure grays).
+
+--- a2600ntscderiv ---
+
+Derived from the Atari 2600's full 128 colors palette available only in NTSC video format[2]. All hues are stretched x2 except of the grays (also including white and black) in order to leave space for 6 flesh hues.
+
+--- colormap-fl-gr ---
+
+Just a neatly downsampled 2D colormap of the full HSV colorspace[3], with a little space left to accommodate ten grays (including black and white) as well as 6 flesh tones.
+
+--- cp4deriv-fl ---
+
+Derived from the Commodore Plus/4 resp. C16 121 color palette[4]. Hues stretched to obtain a near-256 color palette. Leftover blacks were filled up with flesh tones.
+
+--- dp4 ---
+
+Deluxe Paint 4 default palette[5].
+
+--- hsv-fl-gr ---
+
+Based on a palette evenly distributed over the HSV colorspace but without much lightness variation. Some fleshes and full grayscale with white and black added.[5]
+
+--- hsv-stretched-fl-gr ---
+
+Downsampled HSV colorspace with reduced number of hues but more lightness variation[6]. Some grays and fleshes added.
+
+--- msx2 ---
+
+Screen mode 8 palette of the MSX2 computer [4][5]. It is a plain 8-8-4 levels RGB palette without true grays that takes up all 256 possible colors.
+
+--- osdl-mod-fl-gr ---
+
+Modification of a palette found in the OSDL (Object-oriented Simple DirectMedia Library) online documentation on Sourceforge[7]. Obviously it is a plain 6-8-5 levels RGB palette with 240 colors. Original author's fleshes, blues and grays at the end of the palette replaced with custom fleshes and grays.
+
+*** References ***
+
+[1] https://en.wikipedia.org/wiki/List_of_software_palettes
+[2] https://en.wikipedia.org/wiki/List_of_video_game_console_palettes
+[3] https://openclipart.org/detail/179452/color-map-icon
+[4] https://en.wikipedia.org/wiki/List_of_8-bit_computer_hardware_palettes
+[5] https://code.google.com/p/grafx2/wiki/PaletteRepository
+[6] https://itooktheredpill.irgendwo.org/2010/building-a-color-world-map/
+[7] http://osdl.sourceforge.net/main/documentation/misc/nintendo-DS/graphical-chain/OSDL-graphical-chain.html
